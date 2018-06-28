@@ -1,0 +1,11 @@
+{% extends 'layout/layout.html' %}
+
+{% block title %} 首页 {% endblock %}
+
+{% block basehead_css %}
+<link href="/public/css/app.css" rel="stylesheet">
+{% endblock %}
+
+{% block basebody %}
+<div class="index-text">index body content! -- {{body.a + ' -- ' + body.b}}</div>
+{% endblock %}

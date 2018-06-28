@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/layout.css" rel="stylesheet">
+    {% block basehead_css %} {% endblock %}
+    {% block basehead_hjs %} {% endblock %}
+    <title>{% block title %}{% endblock %} - MyTitle</title>
+</head>
+<body>
+    <div class="page-base">
+        <div class="page-head">
+            <div class="page-content">
+                <div class="head-title">国家级大学生创新创业训练计划网络平台</div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="page-content">
+                {% block basebody %} {% endblock %}
+            </div>
+        </div>
+        <div class="page-foot">
+            <div class="page-content">
+                京ICP备10028400-XX号&nbsp;&nbsp;&nbsp;&nbsp;版权所有：中华人民共和国教育部&nbsp;&nbsp;&nbsp;&nbsp;技术支持：010 - 9999 8888
+            </div>
+        </div>
+    </div>
+    {% block basehead_fjs %} {% endblock %}
+</body>
+</html>
